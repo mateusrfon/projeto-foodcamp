@@ -2,7 +2,7 @@
 body {
     background-color: #e5e5e5;
     font-family: 'Roboto';
-    padding: 123px 19px 0 19px;
+    padding: 123px 19px 108px 19px;
 }
 
 .top {
@@ -67,15 +67,43 @@ span {
 
 .choicesBox {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .choices {
     margin-top: 17px;
+    margin-bottom: 27px;
+    margin-right: 16px;
     display: flex;
     flex-direction: column;
     padding: 18px 14px 0 14px;
     width: 172px;
     height: 216px;
     background-color: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+
+.choices img {
+    width: 144px;
+    height: 87px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.choices .dish {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.choices .info {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #a6a6a6;
+}
+
+.black {
+    color: #000;
+}
+
