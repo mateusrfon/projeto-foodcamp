@@ -51,6 +51,6 @@ strong {
     font-weight: bold;
 }
 
-body {
+* {
     box-sizing: border-box;
 }

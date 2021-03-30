@@ -2,7 +2,9 @@
 body {
     background-color: #e5e5e5;
     font-family: 'Roboto';
+    padding: 123px 19px 0 19px;
 }
+
 .top {
     position: fixed;
     top: 0;
@@ -56,3 +58,24 @@ body {
     
 }
 
+span {
+    font-family: 'Righteous';
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+.choicesBox {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.choices {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 14px 0 14px;
+    width: 172px;
+    height: 216px;
+    background-color: #ffffff;
+}
