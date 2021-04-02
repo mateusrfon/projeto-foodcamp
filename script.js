@@ -12,6 +12,7 @@ function SelectDish(buttonClass) {
     select.classList.add('selected')
 
     dish = true;
+    done()
 }
 
 function SelectDrink(buttonClass) {
@@ -24,6 +25,7 @@ function SelectDrink(buttonClass) {
     select.classList.add('selected')
 
     drink = true;
+    done()
 }
 
 function SelectDesert(buttonClass) {
@@ -36,4 +38,13 @@ function SelectDesert(buttonClass) {
     select.classList.add('selected')
 
     desert = true;
+    done()
+}
+
+function done(){
+    if (dish === true && drink === true && desert == true) {
+        const done = document.querySelector('.end button');
+        done.classList.add('bgreen')
+        done.querySelector('p').innerHTML = 'Fechar pedido'
+    }
 }
