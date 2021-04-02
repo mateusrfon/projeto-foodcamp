@@ -24,68 +24,97 @@
     <!--END-->
     <!--CONTEUDO-->
     <span>Primeiro, seu prato</span>
-    <div class="choicesBox">
-        <div class="choices">
+    <div class="choicesBox dishes">
+        <button class="choices dish1" onclick="SelectDish('.dish1')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
             <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
+            <p class="goods"><strong>Frango Assado</strong></p>
             <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
-        <div class="choices">
+            <p class="goods black">R$ 55,00</p>
+        </button>
+        <button class="choices dish2" onclick="SelectDish('.dish2')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
             <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
-        <div class="choices">
+            <p class="goods"><strong>Galinha Assada</strong></p>
+            <p class="info">Prato perfeito para a masculidade frágil</p>
+            <p class="goods black">R$ 57,50</p>
+        </button>
+        <button class="choices dish3" onclick="SelectDish('.dish3')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
             <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
+            <p class="goods"><strong>Ave Assada</strong></p>
+            <p class="info">Na dúvida? Essa é a escolha certeira!</p>
+            <p class="goods black">R$ 59,00</p>
+        </button>
     </div>
-    <span>Primeiro, seu prato</span>
-    <div class="choicesBox">
-        <div class="choices">
-            <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
-        <div class="choices">
-            <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
-        <div class="choices">
-            <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
+    <span>Agora, sua bebida</span>
+    <div class="choicesBox drinks">
+        <button class="choices drink1" onclick="SelectDrink('.drink1')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
+            <img src="images/sucos.jpeg" alt="">
+            <p class="goods"><strong>Suco Mistério</strong></p>
+            <p class="info">Receba um suco aleatório</p>
+            <p class="goods black">R$ 7,00</p>
+        </button>
+        <button class="choices drink2" onclick="SelectDrink('.drink2')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
+            <img src="images/alcool.jpg" alt="">
+            <p class="goods"><strong>Álcool 70</strong></p>
+            <p class="info">Shot para aqueles destemidos</p>
+            <p class="goods black">R$ 0,50</p>
+        </button>
+        <button class="choices drink3" onclick="SelectDrink('.drink3')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
+            <img src="images/agua-mineral.jpg" alt="">
+            <p class="goods"><strong>Água Mineral</strong></p>
+            <p class="info">No precinho para você se hidratar</p>
+            <p class="goods black">R$ 1,00</p>
+        </button>
     </div>
-    <span>Primeiro, seu prato</span>
-    <div class="choicesBox">
-        <div class="choices">
-            <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
-        <div class="choices">
-            <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
-        <div class="choices">
-            <img src="images/frangoassado.jpeg" alt="">
-            <p class="dish"><strong>Frango Assado</strong></p>
-            <p class="info">Tradicional frango assado no ponto</p>
-            <p class="dish black">R$ 55,00</p>
-        </div>
+    <span>Por fim, sua sobremesa</span>
+    <div class="choicesBox deserts">
+        <button class="choices desert1" onclick="SelectDesert('.desert1')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
+            <img src="images/sucos.jpeg" alt="">
+            <p class="goods"><strong>Suco Mistério</strong></p>
+            <p class="info">Receba um suco aleatório</p>
+            <p class="goods black">R$ 7,00</p>
+        </button>
+        <button class="choices desert2" onclick="SelectDesert('.desert2')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
+            <img src="images/alcool.jpg" alt="">
+            <p class="goods"><strong>Álcool 70</strong></p>
+            <p class="info">Shot para aqueles destemidos</p>
+            <p class="goods black">R$ 0,50</p>
+        </button>
+        <button class="choices desert3" onclick="SelectDesert('.desert3')">
+            <div class="selected-border">
+                <ion-icon name="checkmark-circle" class="selected-icon"></ion-icon>
+            </div>            
+            <img src="images/agua-mineral.jpg" alt="">
+            <p class="goods"><strong>Água Mineral</strong></p>
+            <p class="info">No precinho para você se hidratar</p>
+            <p class="goods black">R$ 1,00</p>
+        </button>
     </div>
     <!--CONTEUDO-->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
