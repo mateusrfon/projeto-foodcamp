@@ -79,7 +79,7 @@ span {
 
 .choicesBox {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     z-index: 1;
 }
 
@@ -125,7 +125,7 @@ span {
     object-fit: cover;
 }
 
-.choices .goods {
+.goods, .price {
     margin-bottom: 10px;
     font-size: 16px;
     color: #333;
