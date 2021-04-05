@@ -51,6 +51,9 @@ function Done(){
 
 function Close() {
     if (dish != null && drink != null && desert != null) {
+    const name = prompt("Digite seu nome");
+    const address = prompt("Digite seu endereço");
+
     const dishes = document.querySelector('.dishes ' + dish);
     const drinks = document.querySelector('.drinks ' + drink);
     const deserts = document.querySelector('.deserts ' + desert);
@@ -65,7 +68,9 @@ function Close() {
     "\n- *Prato*: " + dishes.querySelector('.goods strong').innerHTML +
     "\n- *Bebida*: " + drinks.querySelector('.goods strong').innerHTML +
     "\n- *Sobremesa*: " + deserts.querySelector('.goods strong').innerHTML +
-    "\n*Total*: R$ " + "*" + price.toFixed(2) + "*";
+    "\n*Total*: R$ " + "*" + price.toFixed(2) + "*" +
+    "\n\nNome: " + name +
+    "\nEndereço: " + address;
 
     msg = window.encodeURIComponent(msg);
     SendMsg(msg);
