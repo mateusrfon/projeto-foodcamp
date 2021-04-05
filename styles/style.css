@@ -126,6 +126,7 @@ span {
 }
 
 .goods, .price {
+    font-family: 'Roboto';
     margin-bottom: 10px;
     font-size: 16px;
     color: #333;
@@ -136,6 +137,12 @@ span {
     margin-bottom: 10px;
     font-size: 15px;
     color: #a6a6a6;
+}
+
+.choices span {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
 }
 
 .black {

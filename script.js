@@ -55,26 +55,25 @@ function Close() {
     const drinks = document.querySelector('.drinks ' + drink);
     const deserts = document.querySelector('.deserts ' + desert);
 
-    const pdish = dishes.querySelector('.price').innerHTML - "R$ ";
-    const pdrink = drinks.querySelector('.price').innerHTML - "R$ ";
-    const pdesert = deserts.querySelector('.price').innerHTML - "R$ ";
+    const pdish = dishes.querySelector('.price').innerHTML;
+    const pdrink = drinks.querySelector('.price').innerHTML;
+    const pdesert = deserts.querySelector('.price').innerHTML;
 
-    const total = parseInt(pdish) + parseInt(pdrink) + parseInt(pdesert);
+    const price = Number(pdish) + Number(pdrink) + Number(pdesert);
 
-    let msg = "Olá, gostaria de fazer o pedido:" +
-    "- Prato: " + dishes.querySelector('.goods strong').innerHTML +
-    "\n- Bebida: " + drinks.querySelector('.goods strong').innerHTML +
-    "\n- Sobremesa: " + deserts.querySelector('.goods strong').innerHTML +
-    "\nTotal: R$ " + total;
+    let msg = "Olá, gostaria de fazer o *pedido*:" +
+    "\n- *Prato*: " + dishes.querySelector('.goods strong').innerHTML +
+    "\n- *Bebida*: " + drinks.querySelector('.goods strong').innerHTML +
+    "\n- *Sobremesa*: " + deserts.querySelector('.goods strong').innerHTML +
+    "\n*Total*: R$ " + "*" + price.toFixed(2) + "*";
 
     msg = window.encodeURIComponent(msg);
     SendMsg(msg);
-
     }
+}
 
-    function SendMsg(mensagem) {
-        const celular = "5571992862087";
-        const msg = mensagem;
-        window.open("https://wa.me/" + celular + "?text=" + msg, "_blank")
-    }
+function SendMsg(mensagem) {
+    const celular = "5571992862087";
+    const msg = mensagem;
+    window.open("https://wa.me/" + celular + "?text=" + msg, "_blank")
 }
